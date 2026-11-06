@@ -24,7 +24,6 @@
           <stop offset="100%" stop-color="#07140c" stop-opacity="0"/>
         </linearGradient>
       </defs>
-      <!-- silhuetas de árvores / copas (decoração abstrata) -->
       <path fill="url(#g1)" d="M0,0 H1200 V180 C980,240 860,120 700,160 C540,210 480,90 320,140 C180,185 90,110 0,150 Z"/>
       <g fill="#0a1a10" opacity=".55">
         <path d="M80,800 V320 C80,320 20,260 55,210 C90,160 120,250 145,210 C175,155 210,250 240,300 V800 Z"/>
@@ -69,35 +68,49 @@
     <p class="soft-note">Prévia de demonstração.</p>
 
     <main id="conteudo">
-      <section class="wrap hero" id="topo">
-        <div class="hero-copy">
+      <section class="hero-bleed" id="topo">
+        <div class="hero-bleed-media" aria-hidden="false">
+          <picture>
+            <source type="image/webp" srcset="assets/images/hero-arvores-ceu-wide.webp 1920w, assets/images/hero-arvores-ceu.webp 1200w" sizes="100vw">
+            <img
+              src="assets/images/hero-arvores-ceu-wide.jpg"
+              srcset="assets/images/hero-arvores-ceu-wide.jpg 1920w, assets/images/hero-arvores-ceu.jpg 1200w"
+              sizes="100vw"
+              width="1186" height="944"
+              alt="Gramado, árvores arredondadas e céu azul no Camping Central Antonina"
+              fetchpriority="high"
+              decoding="async">
+          </picture>
+        </div>
+        <div class="hero-bleed-scrim" aria-hidden="true"></div>
+        <div class="hero-bleed-copy">
           <p class="eyebrow">Camping · natureza</p>
           <h1>Camping Central Antonina</h1>
-          <p class="lede">Um refúgio arborizado para acampar, cozinhar juntos e acompanhar o espaço ganhando forma.</p>
+          <p class="lede">Árvores, gramado e céu aberto — um canto para acampar e acompanhar o espaço ganhando forma.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://www.instagram.com/campingantonina/" target="_blank" rel="noopener noreferrer">Abrir Instagram</a>
             <a class="btn btn-ghost" href="#galeria">Ver fotos</a>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="assets/images/cozinha-bancada.jpg" width="1200" height="1600" alt="Cozinha do Camping Central Antonina com bancada e geladeira" fetchpriority="high">
-          <span class="hero-badge">Cozinha no camping</span>
-        </div>
+        <span class="hero-badge">Área arborizada</span>
       </section>
 
       <section class="wrap" id="lugar">
         <div class="panel">
           <div class="section-head">
             <p class="eyebrow">O lugar</p>
-            <h2>Entre paredes novas, árvores e céu aberto</h2>
-            <p>Ambiente de camping com área externa em transformação e uma cozinha preparada para o dia a dia. Para novidades e conversa, o canal é o Instagram.</p>
+            <h2>Entre árvores, gramado e céu aberto</h2>
+            <p>Ambiente de camping com vegetação ao redor e área externa em transformação. Para novidades e conversa, o canal é o Instagram.</p>
           </div>
           <div class="split">
             <div class="copy">
               <h3 style="font-family:var(--display);margin:0 0 .5rem;color:var(--forest-800)">Área externa</h3>
-              <p style="margin:0;color:var(--muted)">Espaço aberto com vegetação ao redor. Parte da estrutura externa ainda está em obras — acompanhe a evolução antes da visita.</p>
+              <p style="margin:0;color:var(--muted)">Espaço aberto com gramado e árvores. Parte da estrutura externa ainda está em obras — acompanhe a evolução antes da visita.</p>
             </div>
-            <img src="assets/images/piscina-arvore.jpg" width="1600" height="900" alt="Área externa do camping com vegetação e estrutura em obras" loading="lazy">
+            <picture>
+              <source type="image/webp" srcset="assets/images/hero-arvores-ceu.webp">
+              <img src="assets/images/hero-arvores-ceu.jpg" width="1186" height="1629" alt="Gramado e árvores no camping" loading="lazy">
+            </picture>
           </div>
         </div>
       </section>
@@ -110,7 +123,10 @@
             <p>Ambiente interno com bancada, pia e fogão. Detalhes de uso e disponibilidade: confirme pelo Instagram.</p>
           </div>
           <div class="split alt">
-            <img src="assets/images/cozinha-pia.jpg" width="1126" height="1523" alt="Pia e fogão na cozinha do camping" loading="lazy">
+            <picture>
+              <source type="image/webp" srcset="assets/images/cozinha-pia.webp">
+              <img src="assets/images/cozinha-pia.jpg" width="1126" height="1523" alt="Pia e fogão na cozinha do camping" loading="lazy">
+            </picture>
             <div class="copy">
               <h3 style="font-family:var(--display);margin:0 0 .5rem;color:var(--forest-800)">Bancada e geladeira</h3>
               <p style="margin:0 0 1rem;color:var(--muted)">Espaço claro e funcional para refeições durante a estadia.</p>
@@ -128,6 +144,10 @@
             <p>Toque para ampliar. Use as setas do teclado e Esc para fechar.</p>
           </div>
           <div class="gallery-grid">
+            <button type="button" class="gallery-item" data-lightbox data-full="assets/images/hero-arvores-ceu.jpg" data-caption="Gramado, árvores e céu azul" aria-label="Ampliar foto do gramado e árvores">
+              <img src="assets/images/galeria-arvores-ceu-thumb.jpg" alt="Gramado e árvores sob céu azul" width="626" height="860" loading="lazy">
+              <span class="gallery-caption">Árvores e gramado</span>
+            </button>
             <button type="button" class="gallery-item" data-lightbox data-full="assets/images/cozinha-bancada.jpg" data-caption="Cozinha — bancada e geladeira" aria-label="Ampliar foto da cozinha com bancada">
               <img src="assets/images/cozinha-bancada.jpg" alt="Cozinha com bancada e geladeira" width="900" height="1600" loading="lazy">
               <span class="gallery-caption">Cozinha — bancada</span>
